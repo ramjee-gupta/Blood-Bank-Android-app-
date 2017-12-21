@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    android:background="#ef7474"
+    android:orientation="vertical"
+
+
+    tools:context="com.ram.bloodbank.LoginActivity">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar_layout"
+        />
+
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Authentication"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_margin="20sp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        />   -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:id="@+id/img1"
+        app:srcCompat="@drawable/blood_donate"
+        android:layout_margin="10sp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et1"
+        android:hint="Email"
+        android:textColor="#fff"
+        android:textStyle="bold"
+
+        style="@style/myStyle" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et2"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textStyle="bold"
+
+        style="@style/myStyle"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/loginBtn"
+
+        style="@style/myStyle"
+        />
+
+    <Button
+
+        android:id="@+id/registerBtn"
+        style="@style/myStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#fff"
+
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
